@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <!-- Title -->
+        <h1>Binary Calculator</h1>
+
+        <!-- Binary buttons + Display -->
+        <div class="main-area">
+            <!-- Binary buttons vertically -->
+            <div class="bin_buttons">
+                <button id="button_0" onclick="input('0')">0</button>
+                <button id="button_1" onclick="input('1')">1</button>
+            </div>
+
+            <!-- Display area to the right of binary buttons -->
+            <div id="display">Enter Binary</div>
+        </div>
+
+        <!-- Arithmetic buttons row below -->
+        <div class="arith_buttons">
+            <button id="plus" onclick="input('+')">+</button>
+            <button id="subtr" onclick="input('-')">-</button>
+            <button id="divid" onclick="input('/')">/</button>
+            <button id="mult" onclick="input('*')">*</button>
+            <button onclick="input('=')">=</button>
+            <button onclick="input('C')">C</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

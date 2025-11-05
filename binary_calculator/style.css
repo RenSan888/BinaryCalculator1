@@ -1,0 +1,77 @@
+body {
+    background-color: #ebeff4;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.calculator {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Binary buttons + display */
+.main-area {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-gap: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Binary buttons stacked vertically */
+.bin_buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Display area */
+#display {
+    background-color: #ebeff4;
+    color: rgb(140, 131, 169);
+    border-radius: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 40px;
+}
+
+/* Arithmetic buttons row */
+.arith_buttons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Buttons styling */
+button {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(159, 156, 191);
+    cursor: pointer;
+    width: 60px;
+    height: 50px;
+    color: azure;
+    font-size: 24px;
+    transition: background-color 0.2s;
+}
+button:hover {
+    background-color: rgb(130, 127, 165);
+}
